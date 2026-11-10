@@ -564,6 +564,16 @@ img.jewel { object-fit: cover; }
   .story-art::after { background: linear-gradient(0deg, var(--forest) 0%, rgba(4,25,18,0) 55%); }
 }
 
+/* ---------- V7b · historia: foto completa en marco dorado (no se recorta) ---------- */
+.story .cnt { gap: clamp(32px, 5vw, 72px); }
+.story-frame { margin: 56px 0; justify-self: end; width: min(100%, 440px); aspect-ratio: 1; padding: 10px;
+  border: 1px solid rgba(214,168,90,.6); position: relative; z-index: 1; }
+.story-frame img.jewel, .story-frame svg.jewel { width: 100%; height: 100%; display: block; object-fit: cover; }
+@media (max-width: 860px) {
+  .story-frame { justify-self: stretch; width: 100%; margin: 0 0 48px; }
+  .story-copy { padding-bottom: 32px; }
+}
+
 /* ================= Web publicada (estática, sin Quasar) ================= */
 *, *::before, *::after { box-sizing: border-box; }
 body { margin: 0; }
