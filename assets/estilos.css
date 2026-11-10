@@ -555,6 +555,15 @@ img.jewel { object-fit: cover; }
 .adm-head nav a.on, .adm-head nav a:hover { border-bottom-color: var(--gold); }
 .footer { border-top: 3px solid var(--navy); }
 
+/* ---------- V7 · historia con foto real y logo transparente en el pie ---------- */
+.story-art img.jewel { object-position: center 78%; filter: brightness(.94) saturate(1.05); }
+.story-art::after { background: linear-gradient(90deg, var(--forest) 0%, rgba(4,25,18,.6) 30%, rgba(4,25,18,0) 65%); }
+.footer .logo { height: 60px; width: auto; max-width: 100%; }
+@media (max-width: 860px) {
+  .story-art { height: 320px; }
+  .story-art::after { background: linear-gradient(0deg, var(--forest) 0%, rgba(4,25,18,0) 55%); }
+}
+
 /* ================= Web publicada (estática, sin Quasar) ================= */
 *, *::before, *::after { box-sizing: border-box; }
 body { margin: 0; }
